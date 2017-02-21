@@ -16,6 +16,11 @@ function web_search() {
     ecosia      "https://www.ecosia.org/search?q="
     goodreads   "https://www.goodreads.com/search?q="
     qwant       "https://www.qwant.com/?q="
+    alternativeto "https://alternativeto.net/software/"
+    ebay 	"http://www.ebay.com/sch/i.html?TRS0&_nkw="
+    prisjakt 	"https://www.prisjakt.no/search.php?query="
+    wolfram	"http://www.wolframalpha.com/input/?i="
+    maps	"https://www.google.no/maps/place/"
   )
 
   # check whether the search engine is supported
@@ -48,7 +53,11 @@ alias yandex='web_search yandex'
 alias github='web_search github'
 alias ecosia='web_search ecosia'
 alias goodreads='web_search goodreads'
-alias qwant='web_search qwant'
+alias alternativeto='web_search alternativeto'
+alias ebay='web_search ebay'
+alias prisjakt='web_search prisjakt'
+alias wolfram='web_search wolfram'
+alias maps='web_search maps'
 
 #add your own !bang searches here
 alias alternativeto='web_search alternativeto'

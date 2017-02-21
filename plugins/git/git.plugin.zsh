@@ -205,6 +205,7 @@ alias gmt='git mergetool --no-prompt'
 alias gmum='git merge upstream/master'
 alias gma='git merge --abort'
 
+alias gacp='git commit -a -m "$1" && git push'
 alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
