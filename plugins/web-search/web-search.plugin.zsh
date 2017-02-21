@@ -16,12 +16,12 @@ function web_search() {
     ecosia      "https://www.ecosia.org/search?q="
     goodreads   "https://www.goodreads.com/search?q="
     qwant       "https://www.qwant.com/?q="
+    so		"https://stackoverflow.com/search?q="
     alternativeto "https://alternativeto.net/software/"
-    ebay	"http://www.ebay.com/sch/i.html?TRS0&_nkw="
-    prisjakt	"https://www.prisjakt.no/search.php?query="
+    ebay 	"http://www.ebay.com/sch/i.html?TRS0&_nkw="
+    prisjakt 	"https://www.prisjakt.no/search.php?query="
     wolfram	"http://www.wolframalpha.com/input/?i="
     maps	"https://www.google.no/maps/place/"
-    so		"https://stackoverflow.com/search?q="
   )
 
   # check whether the search engine is supported
@@ -53,12 +53,23 @@ alias sp='web_search startpage'
 alias yandex='web_search yandex'
 alias github='web_search github'
 alias ecosia='web_search ecosia'
+<<<<<<< HEAD
 alias alternativeto='web_search alternativeto'
 alias ebay='web_search ebay'
 alias prisjakt='web_search prisjakt'
 alias wolfram='web_search wolfram'
 alias maps='web_search maps'
 alias so='web_search so'
+||||||| merged common ancestors
+alias goodreads='web_search goodreads'
+=======
+alias goodreads='web_search goodreads'
+alias alternativeto='web_search alternativeto'
+alias ebay='web_search ebay'
+alias prisjakt='web_search prisjakt'
+alias wolfram='web_search wolfram'
+alias maps='web_search maps'
+>>>>>>> test
 
 #add your own !bang searches here
 alias alternativeto='web_search alternativeto'
