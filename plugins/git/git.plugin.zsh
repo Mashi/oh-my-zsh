@@ -159,8 +159,6 @@ alias ghh='git help'
 
 alias gignore='git update-index --assume-unchanged'
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
-alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
-compdef _git git-svn-dcommit-push=git
 
 alias gk='\gitk --all --branches'
 compdef _git gk='gitk'
@@ -187,6 +185,7 @@ alias gmt='git mergetool --no-prompt'
 alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/master'
 
+alias gacp='git commit -a -m "$1" && git push'
 alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
