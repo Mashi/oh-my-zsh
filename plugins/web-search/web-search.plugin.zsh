@@ -54,6 +54,7 @@ alias yandex='web_search yandex'
 alias github='web_search github'
 alias ecosia='web_search ecosia'
 <<<<<<< HEAD
+<<<<<<< HEAD
 alias alternativeto='web_search alternativeto'
 alias ebay='web_search ebay'
 alias prisjakt='web_search prisjakt'
@@ -64,6 +65,10 @@ alias so='web_search so'
 alias goodreads='web_search goodreads'
 =======
 alias goodreads='web_search goodreads'
+||||||| merged common ancestors
+alias goodreads='web_search goodreads'
+=======
+>>>>>>> cleanup
 alias alternativeto='web_search alternativeto'
 alias ebay='web_search ebay'
 alias prisjakt='web_search prisjakt'
