@@ -44,8 +44,6 @@ alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
 
-alias whereami=display_info
-
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -55,11 +53,11 @@ alias mv='mv -i'
 if is-at-least 4.2.0; then
   # open browser on urls
   if [[ -n "$BROWSER" ]]; then
-    _browser_fts=(htm html de org net com at cx nl se dk)
+    _browser_fts=(htm html de org net com at cx no se dk)
     for ft in $_browser_fts; do alias -s $ft=$BROWSER; done
   fi
 
-  _editor_fts=(cpp cxx cc c hh h inl asc txt TXT tex)
+  _editor_fts=(cpp cxx cc c cs js hh h inl asc txt TXT tex)
   for ft in $_editor_fts; do alias -s $ft=$EDITOR; done
 
   if [[ -n "$XIVIEWER" ]]; then
@@ -69,13 +67,6 @@ if is-at-least 4.2.0; then
 
   _media_fts=(ape avi flv m4a mkv mov mp3 mpeg mpg ogg ogm rm wav webm)
   for ft in $_media_fts; do alias -s $ft=mplayer; done
-
-  #read documents
-  alias -s pdf=acroread
-  alias -s ps=gv
-  alias -s dvi=xdvi
-  alias -s chm=xchm
-  alias -s djvu=djview
 
   #list whats inside packed file
   alias -s zip="unzip -l"

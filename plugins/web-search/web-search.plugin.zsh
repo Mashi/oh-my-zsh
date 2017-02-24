@@ -13,9 +13,7 @@ function web_search() {
     startpage   "https://www.startpage.com/do/search?q="
     yandex      "https://yandex.ru/yandsearch?text="
     github      "https://github.com/search?q="
-    baidu       "https://www.baidu.com/s?wd="
     ecosia      "https://www.ecosia.org/search?q="
-    goodreads   "https://www.goodreads.com/search?q="
     alternativeto "https://alternativeto.net/software/"
     ebay 	"http://www.ebay.com/sch/i.html?TRS0&_nkw="
     prisjakt 	"https://www.prisjakt.no/search.php?query="
@@ -51,9 +49,7 @@ alias ddg='web_search duckduckgo'
 alias sp='web_search startpage'
 alias yandex='web_search yandex'
 alias github='web_search github'
-alias baidu='web_search baidu'
 alias ecosia='web_search ecosia'
-alias goodreads='web_search goodreads'
 alias alternativeto='web_search alternativeto'
 alias ebay='web_search ebay'
 alias prisjakt='web_search prisjakt'

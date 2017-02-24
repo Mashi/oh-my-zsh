@@ -102,6 +102,17 @@ compdef _grep gfg
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
 
+function git_add_commit_push() {
+  if [ -z $1 ]; then
+    echo specify git commit message
+  else
+    git commit -a -m $@
+    git push
+  fi
+}
+
+alias gacp="git_add_commit_push"
+
 ggf() {
   [[ "$#" != 1 ]] && local b="$(git_current_branch)"
   git push --force origin "${b:=$1}"
@@ -185,7 +196,6 @@ alias gmt='git mergetool --no-prompt'
 alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/master'
 
-alias gacp='git commit -a -m "$1" && git push'
 alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
