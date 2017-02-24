@@ -104,18 +104,6 @@ compdef _grep gfg
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
 
-function git_commit_and_push() {
-  if [ -z $1 ]; then
-    echo specify git commit message
-  else
-#    git add --all
-    git commit -m $@
-    git push
-  fi
-}
-
-alias gcap="git_commit_and_push"
-
 ggf() {
   [[ "$#" != 1 ]] && local b="$(git_current_branch)"
   git push --force origin "${b:=$1}"
@@ -177,6 +165,8 @@ alias ghh='git help'
 
 alias gignore='git update-index --assume-unchanged'
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
+alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
+compdef _git git-svn-dcommit-push=git
 
 alias gk='\gitk --all --branches'
 compdef _git gk='gitk'
@@ -202,10 +192,10 @@ compdef _git glp=git-log
 alias gm='git merge'
 alias gmom='git merge origin/master'
 alias gmt='git mergetool --no-prompt'
+alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/master'
 alias gma='git merge --abort'
 
-alias gacp='git commit -a -m "$1" && git push'
 alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
@@ -238,7 +228,7 @@ alias gsi='git submodule init'
 alias gsps='git show --pretty=short --show-signature'
 alias gsr='git svn rebase'
 alias gss='git status -s'
-alias gs='git status'
+alias gst='git status'
 alias gsta='git stash save'
 alias gstaa='git stash apply'
 alias gstc='git stash clear'
