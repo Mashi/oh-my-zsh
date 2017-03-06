@@ -15,10 +15,11 @@ function web_search() {
     github      "https://github.com/search?q="
     ecosia      "https://www.ecosia.org/search?q="
     alternativeto "https://alternativeto.net/software/"
-    ebay 	"http://www.ebay.com/sch/i.html?TRS0&_nkw="
-    prisjakt 	"https://www.prisjakt.no/search.php?query="
+    ebay	"http://www.ebay.com/sch/i.html?TRS0&_nkw="
+    prisjakt	"https://www.prisjakt.no/search.php?query="
     wolfram	"http://www.wolframalpha.com/input/?i="
     maps	"https://www.google.no/maps/place/"
+    so		"https://stackoverflow.com/search?q="
   )
 
   # check whether the search engine is supported
@@ -55,6 +56,7 @@ alias ebay='web_search ebay'
 alias prisjakt='web_search prisjakt'
 alias wolfram='web_search wolfram'
 alias maps='web_search maps'
+alias so='web_search so'
 
 #add your own !bang searches here
 alias wiki='web_search duckduckgo \!w'

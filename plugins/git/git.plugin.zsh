@@ -106,7 +106,8 @@ function git_add_commit_push() {
   if [ -z $1 ]; then
     echo specify git commit message
   else
-    git commit -a -m $@
+    git add --all
+    git commit -m $@
     git push
   fi
 }
@@ -193,7 +194,6 @@ compdef _git glp=git-log
 alias gm='git merge'
 alias gmom='git merge origin/master'
 alias gmt='git mergetool --no-prompt'
-alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/master'
 
 alias gp='git push'
@@ -227,7 +227,7 @@ alias gsi='git submodule init'
 alias gsps='git show --pretty=short --show-signature'
 alias gsr='git svn rebase'
 alias gss='git status -s'
-alias gst='git status'
+alias gs='git status'
 alias gsta='git stash save'
 alias gstaa='git stash apply'
 alias gstc='git stash clear'
