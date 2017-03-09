@@ -102,17 +102,17 @@ compdef _grep gfg
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
 
-function git_add_commit_push() {
+function git_commit_and_push() {
   if [ -z $1 ]; then
     echo specify git commit message
   else
-    git add --all
+#    git add --all
     git commit -m $@
     git push
   fi
 }
 
-alias gacp="git_add_commit_push"
+alias gcap="git_commit_and_push"
 
 ggf() {
   [[ "$#" != 1 ]] && local b="$(git_current_branch)"
