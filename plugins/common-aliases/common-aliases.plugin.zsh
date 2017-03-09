@@ -68,7 +68,7 @@ if is-at-least 4.2.0; then
   for ft in $_media_fts; do alias -s $ft=mplayer; done
 
   #read documents
-  alias -s pdf=acroread
+  alias -s pdf=chromium-browser
   alias -s ps=gv
   alias -s dvi=xdvi
   alias -s chm=xchm
