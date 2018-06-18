@@ -44,6 +44,7 @@ alias sortnr='sort -n -r'
 alias unexport='unset'
 
 alias rm='trash'
+alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
