@@ -68,8 +68,6 @@ if is-at-least 4.2.0; then
   _media_fts=(ape avi flv m4a mkv mov mp3 mpeg mpg ogg ogm rm wav webm)
   for ft in $_media_fts; do alias -s $ft=mplayer; done
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   #read documents
   alias -s pdf=chromium-browser
   alias -s ps=gv
@@ -77,7 +75,6 @@ if is-at-least 4.2.0; then
   alias -s chm=xchm
   alias -s djvu=djview
 
-||||||| merged common ancestors
   #read documents
   alias -s pdf=acroread
   alias -s ps=gv
@@ -85,18 +82,6 @@ if is-at-least 4.2.0; then
   alias -s chm=xchm
   alias -s djvu=djview
 
-=======
->>>>>>> cleanup
-||||||| merged common ancestors
-=======
-  #read documents
-  alias -s pdf=acroread
-  alias -s ps=gv
-  alias -s dvi=xdvi
-  alias -s chm=xchm
-  alias -s djvu=djview
-
->>>>>>> hm
   #list whats inside packed file
   alias -s zip="unzip -l"
   alias -s rar="unrar l"
